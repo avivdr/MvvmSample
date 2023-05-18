@@ -12,7 +12,20 @@
        DisabledColor="#B4FFFFFF"
        UnselectedColor="#95FFFFFF">
 
-    
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        
+        <Tab Title="pages">
+            <ShellContent Title="Main Page"
+                          Icon="\Resources\Images\dotnet_bot.svg"
+                          ContentTemplate="{DataTemplate local:MainPage}"/>
+            <ShellContent Title="Student Deatils"
+                          Icon="\Resources\Images\student.svg"
+                          ContentTemplate="{DataTemplate views:StudentDetails}"/>
+            <ShellContent Title="Teacher Page"
+                          Icon="\Resources\Images\teacher.svg"
+                          ContentTemplate="{DataTemplate views:TeacherPage}"/>
+        </Tab>
+    </FlyoutItem>
     
     
 </Shell>
